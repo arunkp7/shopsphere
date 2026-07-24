@@ -173,3 +173,16 @@
         gap: 10px;
     }
 }
+
+.themeBtn {
+    background: transparent;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 4px;
+    transition: transform 0.3s ease;
+}
+
+.themeBtn:hover {
+    transform: rotate(20deg) scale(1.2);
+}

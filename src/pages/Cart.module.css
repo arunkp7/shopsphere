@@ -12,7 +12,7 @@
 .pageTitle {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 24px;
 }
 
@@ -25,9 +25,9 @@
 
 /* Items Section */
 .itemsSection {
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
     overflow: hidden;
 }
 
@@ -36,9 +36,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px 24px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--border-color);
     font-size: 0.95rem;
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .clearBtn {
@@ -56,12 +56,12 @@
     align-items: center;
     gap: 20px;
     padding: 20px 24px;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--border-color);
     transition: background 0.2s;
 }
 
 .cartItem:hover {
-    background: #fafafa;
+    background: var(--bg-primary);
 }
 
 .cartItem:last-child {
@@ -71,7 +71,7 @@
 .itemImage {
     width: 90px;
     height: 90px;
-    background: #f9f9f9;
+    background: var(--bg-primary);
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@
 .itemTitle {
     font-size: 0.95rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 6px;
     cursor: pointer;
     display: -webkit-box;
@@ -177,10 +177,10 @@
 
 /* Summary */
 .summary {
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
     padding: 24px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
     position: sticky;
     top: 85px;
 }
@@ -188,7 +188,7 @@
 .summary h2 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 20px;
 }
 
@@ -196,7 +196,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.95rem;
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 12px;
 }
 
@@ -214,7 +214,7 @@
 .totalRow {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
 }
 
 .checkoutBtn {

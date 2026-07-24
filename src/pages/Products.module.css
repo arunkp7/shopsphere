@@ -15,11 +15,11 @@
 .sidebar {
     width: 260px;
     flex-shrink: 0;
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
     padding: 24px;
     height: fit-content;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
 }
 
 .filterHeader {
@@ -32,7 +32,7 @@
 .filterHeader h3 {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
 }
 
 .clearBtn {
@@ -53,7 +53,7 @@
 .filterSection h4 {
     font-size: 0.95rem;
     font-weight: 700;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 12px;
 }
 
@@ -62,7 +62,7 @@
     align-items: center;
     gap: 8px;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 8px;
     cursor: pointer;
 }
@@ -74,11 +74,12 @@
 .select {
     width: 100%;
     padding: 8px 12px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 6px;
     font-size: 0.9rem;
     outline: none;
-    color: #333;
+    color: var(--text-primary);
+    background: var(--input-bg);
     cursor: pointer;
 }
 
@@ -95,10 +96,10 @@
 
 /* Card */
 .card {
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -160,7 +161,7 @@
 
 .cardTitle {
     font-size: 0.9rem;
-    color: #333;
+    color: var(--text-primary);
     font-weight: 600;
     margin-bottom: 8px;
     display: -webkit-box;
@@ -189,7 +190,7 @@
 .cardPrice {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
 }
 
 .addToCartBtn {
@@ -212,7 +213,7 @@
 .empty {
     text-align: center;
     padding: 80px 20px;
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
 }
 
@@ -224,12 +225,12 @@
 
 .empty h3 {
     font-size: 1.3rem;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 8px;
 }
 
 .empty p {
-    color: #888;
+    color: var(--text-secondary);
     margin-bottom: 20px;
 }
 

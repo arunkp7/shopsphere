@@ -1,3 +1,4 @@
+import { useTheme } from '../context/ThemeContext'
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
@@ -12,6 +13,7 @@ function Navbar() {
     const { wishlistItems } = useWishlist()
     const { user, logout } = useAuth()
     const navigate = useNavigate()
+    const { darkMode, toggleTheme } = useTheme()
 
     const handleSearch = (e) => {
         e.preventDefault()
@@ -25,6 +27,11 @@ function Navbar() {
     return (
         <nav className={styles.navbar}>
             <div className={styles.container}>
+
+                {/* Dark Mode Toggle */}
+                <button onClick={toggleTheme} className={styles.themeBtn}>
+                    {darkMode ? '☀️' : '🌙'}
+                </button>
 
                 {/* Logo */}
                 <Link to="/" className={styles.logo}>
