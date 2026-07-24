@@ -1,0 +1,426 @@
+.page {
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Profile Header */
+.profileHeader {
+    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 24px;
+    color: white;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #e94560;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+}
+
+.profileInfo {
+    flex: 1;
+}
+
+.profileInfo h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    text-transform: capitalize;
+}
+
+.profileInfo p {
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+.memberBadge {
+    background: rgba(233, 69, 96, 0.2);
+    color: #e94560;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.logoutBtn {
+    background: transparent;
+    border: 2px solid #e94560;
+    color: #e94560;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.logoutBtn:hover {
+    background: #e94560;
+    color: white;
+}
+
+/* Stats */
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.statCard {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.statCard span {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #e94560;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.statCard p {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #888;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.activeTab {
+    background: #e94560;
+    color: white;
+}
+
+/* Tab Content */
+.tabContent {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overviewGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Card */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+/* Order Row */
+.orderRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.orderId {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+.orderDate {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.orderRight {
+    text-align: right;
+}
+
+.orderTotal {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-top: 6px;
+}
+
+/* Status badges */
+.status {
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.statusDelivered {
+    background: #e6f4e6;
+    color: #2d7a2d;
+}
+
+.statusTransit {
+    background: #fff3e0;
+    color: #e65c00;
+}
+
+.statusProcessing {
+    background: #e8f0fe;
+    color: #1967d2;
+}
+
+.viewAllBtn {
+    background: transparent;
+    border: none;
+    color: #e94560;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 16px;
+    padding: 0;
+}
+
+/* Address */
+.addressBox {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.emptyAddress p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.emptyAddress button {
+    background: transparent;
+    border: none;
+    color: #e94560;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Order Card */
+.orderCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.orderCard:last-child {
+    border-bottom: none;
+}
+
+.orderItems {
+    font-size: 0.82rem;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+.orderCardRight {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.trackBtn {
+    background: transparent;
+    border: 1.5px solid #1a1a2e;
+    color: #1a1a2e;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.trackBtn:hover {
+    background: #1a1a2e;
+    color: white;
+}
+
+/* Settings Form */
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.fullWidth {
+    grid-column: 1 / -1;
+}
+
+.field label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.field input {
+    padding: 11px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+    color: #333;
+}
+
+.field input:focus {
+    border-color: #e94560;
+}
+
+.saveBtn {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.2s;
+}
+
+.saveBtn:hover {
+    background: #c73652;
+}
+
+/* Not Logged In */
+.notLoggedIn {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.notLoggedIn span {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.notLoggedIn h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 24px;
+}
+
+.notLoggedIn button {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .statsRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .overviewGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .profileHeader {
+        flex-wrap: wrap;
+    }
+
+    .formGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .statsRow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+}
