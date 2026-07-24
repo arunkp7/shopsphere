@@ -1,0 +1,384 @@
+.page {
+    min-height: 100vh;
+    background: #f5f5f5;
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 24px;
+}
+
+.breadcrumb span {
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.breadcrumb span:hover {
+    color: #e94560;
+}
+
+.current {
+    color: #333;
+    font-weight: 600;
+    cursor: default !important;
+}
+
+/* Layout */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.imageSection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imageWrapper {
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.imageWrapper img {
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.badge {
+    background: #f0f9f0;
+    color: #2d7a2d;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* Info */
+.infoSection {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.category {
+    font-size: 0.8rem;
+    color: #e94560;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    line-height: 1.4;
+}
+
+/* Rating */
+.ratingRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.starFilled {
+    color: #f5a623;
+    font-size: 1.2rem;
+}
+
+.starEmpty {
+    color: #ddd;
+    font-size: 1.2rem;
+}
+
+.ratingText {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Price */
+.priceRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.originalPrice {
+    font-size: 1.1rem;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.discount {
+    background: #e94560;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+/* Description */
+.description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.7;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 16px;
+}
+
+/* Quantity */
+.quantityRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.qtyBtn {
+    background: #f5f5f5;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.qtyBtn:hover {
+    background: #e94560;
+    color: white;
+}
+
+.qtyValue {
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.addToCartBtn {
+    flex: 1;
+    background: #1a1a2e;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.addToCartBtn:hover {
+    background: #0f3460;
+}
+
+.buyNowBtn {
+    flex: 1;
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.buyNowBtn:hover {
+    background: #c73652;
+}
+
+.wishlistBtn {
+    background: white;
+    border: 2px solid #ddd;
+    padding: 14px 16px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.wishlistBtn:hover {
+    border-color: #e94560;
+}
+
+.wishlisted {
+    border-color: #e94560;
+    background: #fff5f7;
+}
+
+/* Extra Info */
+.extraInfo {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Skeleton */
+.skeletonPage {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.skeletonImage {
+    height: 350px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 12px;
+}
+
+.skeletonInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 20px;
+}
+
+.skeletonLine {
+    height: 20px;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 6px;
+}
+
+.skeletonLineShort {
+    height: 20px;
+    width: 60%;
+    background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 6px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Error */
+.error {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.error span {
+    font-size: 3rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.error h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error button {
+    background: #e94560;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .layout {
+        grid-template-columns: 1fr;
+        padding: 24px;
+    }
+
+    .skeletonPage {
+        grid-template-columns: 1fr;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+}
