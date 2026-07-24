@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import { useNavigate, Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import toast from 'react-hot-toast'
 import styles from './Login.module.css'
+import { useNavigate, Link, useLocation } from 'react-router-dom'
 
 function Login() {
     const [isLogin, setIsLogin] = useState(true)
@@ -16,6 +16,8 @@ function Login() {
     const [loading, setLoading] = useState(false)
     const { login } = useAuth()
     const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/'
 
     const handleChange = (e) => {
         setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }))
@@ -55,7 +57,7 @@ function Login() {
             login(formData.email, formData.password, formData.name)
             toast.success(isLogin ? 'Welcome back!' : 'Account created!')
             setLoading(false)
-            navigate('/')
+            navigate(from)
         }, 1000)
     }
 
