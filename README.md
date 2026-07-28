@@ -15,11 +15,11 @@ A fully responsive, feature-rich e-commerce frontend built with React 19. ShopSp
 
 | Home Page | Products Page |
 |-----------|--------------|
-| ![Home](Home.png) | ![Products](Products.png) |
+| ![Home](snapshots/Home.png) | ![Products](snapshots/Products.png) |
 
 | Product Details | Cart |
 |----------------|------|
-| ![Details](Product-Detail.png) | ![Cart(Dark Mode)](Checkout.png) |
+| ![Details](snapshots/Product-Detail.png) | ![Cart(Dark Mode)](snapshots/Checkout.png) |
 
 ---
 
@@ -63,34 +63,34 @@ A fully responsive, feature-rich e-commerce frontend built with React 19. ShopSp
 
 ## 📁 Folder Structure
 
-src/
-├── assets/
-├── components/
-│ ├── Navbar.jsx
-│ ├── Footer.jsx
-│ ├── ScrollToTop.jsx
-│ └── BackToTop.jsx
-├── context/
-│ ├── AuthContext.jsx
-│ ├── CartContext.jsx
-│ ├── WishlistContext.jsx
-│ └── ThemeContext.jsx
-├── pages/
-│ ├── Home.jsx
-│ ├── Products.jsx
-│ ├── ProductDetails.jsx
-│ ├── Cart.jsx
-│ ├── Wishlist.jsx
-│ ├── Checkout.jsx
-│ ├── Login.jsx
-│ ├── Profile.jsx
-│ └── NotFound.jsx
-├── routes/
-│ └── ProtectedRoute.jsx
-├── services/
-│ └── api.js
-├── App.jsx
-└── main.jsx
+📦 src
+ ┣ 📂 assets
+ ┣ 📂 components
+ ┃ ┣ 📜 Navbar.jsx
+ ┃ ┣ 📜 Footer.jsx
+ ┃ ┣ 📜 ScrollToTop.jsx
+ ┃ ┗ 📜 BackToTop.jsx
+ ┣ 📂 context
+ ┃ ┣ 📜 AuthContext.jsx
+ ┃ ┣ 📜 CartContext.jsx
+ ┃ ┣ 📜 WishlistContext.jsx
+ ┃ ┗ 📜 ThemeContext.jsx
+ ┣ 📂 pages
+ ┃ ┣ 📜 Home.jsx
+ ┃ ┣ 📜 Products.jsx
+ ┃ ┣ 📜 ProductDetails.jsx
+ ┃ ┣ 📜 Cart.jsx
+ ┃ ┣ 📜 Wishlist.jsx
+ ┃ ┣ 📜 Checkout.jsx
+ ┃ ┣ 📜 Login.jsx
+ ┃ ┣ 📜 Profile.jsx
+ ┃ ┗ 📜 NotFound.jsx
+ ┣ 📂 routes
+ ┃ ┗ 📜 ProtectedRoute.jsx
+ ┣ 📂 services
+ ┃ ┗ 📜 api.js
+ ┣ 📜 App.jsx
+ ┗ 📜 main.jsx
 
 ---
 
@@ -128,8 +128,10 @@ npm run build
 
 ## 🔑 Demo Credentials
 
-Email: demo@shopsphere.com
-Password: demo123
+| Field | Value |
+|-------|-------|
+| Email | demo@shopsphere.com |
+| Password | demo123 |
 
 ---
 
