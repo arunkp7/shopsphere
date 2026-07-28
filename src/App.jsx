@@ -10,6 +10,7 @@ import Wishlist from './pages/Wishlist'
 import Checkout from './pages/Checkout'
 import Login from './pages/Login'
 import Profile from './pages/Profile'
+import NotFound from './pages/NotFound'
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Profile />
           </ProtectedRoute>
         } />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
