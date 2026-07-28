@@ -7,7 +7,7 @@
 
 A fully responsive, feature-rich e-commerce frontend built with React 19. ShopSphere simulates a real-world online shopping experience with product browsing, cart management, wishlist, authentication, checkout flow, and dark mode.
 
-> 🔗 **Live Demo:** [shopsphere.vercel.app](https://shopsphere.vercel.app)
+> 🔗 **Live Demo:** [shopsphere.vercel.app](https://shopsphere-omega-five.vercel.app/)
 
 ---
 
@@ -15,11 +15,11 @@ A fully responsive, feature-rich e-commerce frontend built with React 19. ShopSp
 
 | Home Page | Products Page |
 |-----------|--------------|
-| ![Home]() | ![Products]() |
+| ![Home](Home.png) | ![Products](Products.png) |
 
 | Product Details | Cart |
 |----------------|------|
-| ![Details]() | ![Cart]() |
+| ![Details](Product-Detail.png) | ![Cart(Dark Mode)](Checkout.png) |
 
 ---
 
