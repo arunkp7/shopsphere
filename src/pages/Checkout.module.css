@@ -1,6 +1,6 @@
 .page {
     min-height: 100vh;
-    background: #f5f5f5;
+    background: var(--bg-primary);
     padding: 30px 20px;
 }
 
@@ -12,19 +12,18 @@
 .pageTitle {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 24px;
 }
 
-/* Steps */
 .steps {
     display: flex;
     align-items: center;
     margin-bottom: 32px;
-    background: white;
+    background: var(--bg-card);
     padding: 20px 30px;
     border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
 }
 
 .stepItem {
@@ -37,8 +36,8 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: #f0f0f0;
-    color: #aaa;
+    background: var(--bg-primary);
+    color: var(--text-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,14 +58,14 @@
 
 .stepLabel {
     font-size: 0.85rem;
-    color: #aaa;
+    color: var(--text-secondary);
     margin-left: 10px;
     white-space: nowrap;
 }
 
 .stepLabelActive {
     font-size: 0.85rem;
-    color: #1a1a2e;
+    color: var(--text-primary);
     font-weight: 600;
     margin-left: 10px;
     white-space: nowrap;
@@ -75,7 +74,7 @@
 .stepLine {
     flex: 1;
     height: 2px;
-    background: #f0f0f0;
+    background: var(--border-color);
     margin: 0 12px;
 }
 
@@ -83,7 +82,6 @@
     background: #2d7a2d;
 }
 
-/* Layout */
 .layout {
     display: grid;
     grid-template-columns: 1fr 360px;
@@ -91,18 +89,17 @@
     align-items: start;
 }
 
-/* Form Card */
 .formCard {
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
 }
 
 .formCard h2 {
     font-size: 1.2rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 24px;
 }
 
@@ -126,17 +123,18 @@
 .field label {
     font-size: 0.88rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
 }
 
 .field input {
     padding: 11px 14px;
-    border: 1.5px solid #ddd;
+    border: 1.5px solid var(--border-color);
     border-radius: 8px;
     font-size: 0.95rem;
     outline: none;
     transition: border-color 0.2s;
-    color: #333;
+    color: var(--text-primary);
+    background: var(--input-bg);
 }
 
 .field input:focus {
@@ -152,7 +150,6 @@
     color: #e94560;
 }
 
-/* Payment */
 .paymentOptions {
     display: flex;
     flex-direction: column;
@@ -165,12 +162,12 @@
     align-items: center;
     gap: 12px;
     padding: 14px 16px;
-    border: 2px solid #f0f0f0;
+    border: 2px solid var(--border-color);
     border-radius: 8px;
     cursor: pointer;
     font-size: 0.95rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     transition: all 0.2s;
 }
 
@@ -180,19 +177,18 @@
 
 .paymentSelected {
     border-color: #e94560;
-    background: #fff5f7;
+    background: rgba(233, 69, 96, 0.05);
 }
 
 .codNote {
-    background: #f9f9f9;
+    background: var(--bg-primary);
     border-radius: 8px;
     padding: 16px;
     font-size: 0.95rem;
-    color: #555;
+    color: var(--text-secondary);
     margin-top: 16px;
 }
 
-/* Buttons */
 .nextBtn {
     background: #e94560;
     color: white;
@@ -211,8 +207,8 @@
 
 .backBtn {
     background: transparent;
-    border: 2px solid #ddd;
-    color: #555;
+    border: 2px solid var(--border-color);
+    color: var(--text-secondary);
     padding: 13px 24px;
     border-radius: 8px;
     font-size: 1rem;
@@ -222,8 +218,8 @@
 }
 
 .backBtn:hover {
-    border-color: #1a1a2e;
-    color: #1a1a2e;
+    border-color: var(--text-primary);
+    color: var(--text-primary);
 }
 
 .stepButtons {
@@ -248,9 +244,8 @@
     background: #236023;
 }
 
-/* Review */
 .reviewSection {
-    background: #f9f9f9;
+    background: var(--bg-primary);
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 16px;
@@ -259,13 +254,13 @@
 .reviewSection h4 {
     font-size: 0.9rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 10px;
 }
 
 .reviewSection p {
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
     margin-bottom: 4px;
 }
 
@@ -276,7 +271,7 @@
 .reviewItems h4 {
     font-size: 0.9rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 12px;
 }
 
@@ -285,14 +280,14 @@
     align-items: center;
     gap: 12px;
     padding: 10px 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .reviewItem img {
     width: 50px;
     height: 50px;
     object-fit: contain;
-    background: #f9f9f9;
+    background: var(--bg-primary);
     border-radius: 6px;
     padding: 4px;
 }
@@ -300,28 +295,27 @@
 .reviewItemTitle {
     font-size: 0.88rem;
     font-weight: 600;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 4px;
 }
 
 .reviewItemMeta {
     font-size: 0.82rem;
-    color: #888;
+    color: var(--text-secondary);
 }
 
 .reviewItemTotal {
     margin-left: auto;
     font-size: 0.95rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
 }
 
-/* Summary */
 .summary {
-    background: white;
+    background: var(--bg-card);
     border-radius: 12px;
     padding: 24px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--shadow);
     position: sticky;
     top: 85px;
 }
@@ -329,7 +323,7 @@
 .summary h2 {
     font-size: 1.1rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 16px;
 }
 
@@ -344,31 +338,30 @@
     align-items: center;
     gap: 10px;
     padding: 8px 0;
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .summaryItem img {
     width: 44px;
     height: 44px;
     object-fit: contain;
-    background: #f9f9f9;
+    background: var(--bg-primary);
     border-radius: 6px;
     padding: 4px;
 }
 
 .summaryItemInfo p {
     font-size: 0.82rem;
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .summaryItem span {
     margin-left: auto;
     font-size: 0.9rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
 }
 
-/* Promo */
 .promoRow {
     display: flex;
     gap: 8px;
@@ -378,10 +371,12 @@
 .promoRow input {
     flex: 1;
     padding: 10px 12px;
-    border: 1.5px solid #ddd;
+    border: 1.5px solid var(--border-color);
     border-radius: 6px;
     font-size: 0.88rem;
     outline: none;
+    background: var(--input-bg);
+    color: var(--text-primary);
 }
 
 .promoRow button {
@@ -409,7 +404,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 0.9rem;
-    color: #555;
+    color: var(--text-secondary);
 }
 
 .discount {
@@ -424,16 +419,15 @@
 
 .divider {
     border: none;
-    border-top: 1px solid #f0f0f0;
+    border-top: 1px solid var(--border-color);
 }
 
 .total {
     font-size: 1.05rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
 }
 
-/* Success */
 .successPage {
     min-height: 100vh;
     background: linear-gradient(135deg, #1a1a2e, #0f3460);
@@ -444,7 +438,7 @@
 }
 
 .successCard {
-    background: white;
+    background: var(--bg-card);
     border-radius: 20px;
     padding: 50px 40px;
     text-align: center;
@@ -461,17 +455,17 @@
 .successCard h1 {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--text-primary);
     margin-bottom: 10px;
 }
 
 .successCard>p {
-    color: #888;
+    color: var(--text-secondary);
     margin-bottom: 24px;
 }
 
 .orderIdBox {
-    background: #f5f5f5;
+    background: var(--bg-primary);
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
@@ -479,7 +473,7 @@
 
 .orderIdBox p {
     font-size: 0.85rem;
-    color: #888;
+    color: var(--text-secondary);
     margin-bottom: 6px;
 }
 
@@ -492,7 +486,7 @@
 
 .successNote {
     font-size: 0.9rem;
-    color: #888;
+    color: var(--text-secondary);
     margin-bottom: 30px;
 }
 
@@ -515,8 +509,8 @@
 
 .secondaryBtn {
     background: transparent;
-    border: 2px solid #1a1a2e;
-    color: #1a1a2e;
+    border: 2px solid var(--border-color);
+    color: var(--text-primary);
     padding: 12px 24px;
     border-radius: 8px;
     font-size: 0.95rem;
@@ -524,7 +518,6 @@
     cursor: pointer;
 }
 
-/* Empty */
 .emptyPage {
     text-align: center;
     padding: 100px 20px;
@@ -538,7 +531,7 @@
 
 .emptyPage h2 {
     font-size: 1.5rem;
-    color: #333;
+    color: var(--text-primary);
     margin-bottom: 20px;
 }
 
@@ -553,7 +546,6 @@
     cursor: pointer;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .layout {
         grid-template-columns: 1fr;
