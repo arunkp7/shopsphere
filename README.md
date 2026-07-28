@@ -63,34 +63,43 @@ A fully responsive, feature-rich e-commerce frontend built with React 19. ShopSp
 
 ## 📁 Folder Structure
 
-📦 src
- ┣ 📂 assets
- ┣ 📂 components
- ┃ ┣ 📜 Navbar.jsx
- ┃ ┣ 📜 Footer.jsx
- ┃ ┣ 📜 ScrollToTop.jsx
- ┃ ┗ 📜 BackToTop.jsx
- ┣ 📂 context
- ┃ ┣ 📜 AuthContext.jsx
- ┃ ┣ 📜 CartContext.jsx
- ┃ ┣ 📜 WishlistContext.jsx
- ┃ ┗ 📜 ThemeContext.jsx
- ┣ 📂 pages
- ┃ ┣ 📜 Home.jsx
- ┃ ┣ 📜 Products.jsx
- ┃ ┣ 📜 ProductDetails.jsx
- ┃ ┣ 📜 Cart.jsx
- ┃ ┣ 📜 Wishlist.jsx
- ┃ ┣ 📜 Checkout.jsx
- ┃ ┣ 📜 Login.jsx
- ┃ ┣ 📜 Profile.jsx
- ┃ ┗ 📜 NotFound.jsx
- ┣ 📂 routes
- ┃ ┗ 📜 ProtectedRoute.jsx
- ┣ 📂 services
- ┃ ┗ 📜 api.js
- ┣ 📜 App.jsx
- ┗ 📜 main.jsx
+```
+src/
+│
+├── assets/
+│
+├── components/
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── ScrollToTop.jsx
+│   └── BackToTop.jsx
+│
+├── context/
+│   ├── AuthContext.jsx
+│   ├── CartContext.jsx
+│   ├── WishlistContext.jsx
+│   └── ThemeContext.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Products.jsx
+│   ├── ProductDetails.jsx
+│   ├── Cart.jsx
+│   ├── Wishlist.jsx
+│   ├── Checkout.jsx
+│   ├── Login.jsx
+│   ├── Profile.jsx
+│   └── NotFound.jsx
+│
+├── routes/
+│   └── ProtectedRoute.jsx
+│
+├── services/
+│   └── api.js
+│
+├── App.jsx
+└── main.jsx
+```
 
 ---
 
